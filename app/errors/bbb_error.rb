@@ -1,0 +1,1 @@
+class BbbError < StandardError; end

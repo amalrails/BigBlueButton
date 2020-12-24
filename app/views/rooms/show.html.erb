@@ -1,0 +1,16 @@
+<p>
+  <strong>Meeting name:</strong>
+  <%= @room.meeting_name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @room.description %>
+</p>
+
+<p>
+  <%= link_to "<button class='btn-success'>Join</button>".html_safe, api_bbb_itegration_join_path(room_id: @room.meeting_id), target: :_blank %>
+</p>
+
+<%= link_to 'Edit', edit_room_path(@room) %> |
+<%= link_to 'Back', rooms_path %>

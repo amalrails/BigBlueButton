@@ -1,0 +1,23 @@
+<h1>Rooms</h1>
+
+<table class="table-hover table-striped">
+  <thead>
+    <tr>
+      <th>Meeting name</th>
+      <th>Description</th>
+      <th colspan="2" class='center'>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rooms.each do |room| %>
+      <tr>
+        <td><b><%= link_to room.meeting_name, room  %></td>
+        <td><%= room.description %></td>
+        <td><%= link_to 'Edit', edit_room_path(room) %></td>
+        <td class='center'><%= link_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

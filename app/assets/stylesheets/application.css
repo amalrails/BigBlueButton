@@ -1,0 +1,239 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+footer { margin-top: 100px; }
+table, td, th { vertical-align: middle; border: none; }
+th { border-bottom: 1px solid #DDD; }
+body { margin: 0; }
+.navbar {
+  min-height: 38px;
+  background-color: #f55e55;
+}
+.navbar a.brand { font-size: 18px; }
+.navbar a.brand:hover {
+ color: #fff;
+ background-color: transparent;
+ text-decoration: none;
+}
+.container a:hover {
+  color: #f55e55;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+footer {
+  background-color: #ebebeb;
+  padding: 30px 0;
+}
+.container input[type="submit"] {
+  height: 30px;
+  font-size: 13px;
+  background-color: #03a528;
+  border: none;
+  color: #fff;
+}
+
+.navbar-toggler { marging: 0 auto; }
+
+footer { margin-top: 100px; }
+table {
+    width: 100%;
+    vertical-align: middle;
+    border: #ff7fae;
+}
+.table a {
+  color: #000000;
+}
+td, th {
+    width: auto;
+    padding: 1%;
+}
+th { border-bottom: 1px solid #DDD; }
+body { margin: 0; }
+
+.navbar-brand {
+    float: left;
+    padding: 10px 10px;
+    font-size: 28px;
+    line-height: 25px;
+    margin-left: -15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.bg-primary {
+    background-color: #011a2f;
+}
+
+.pretty th .current {
+  padding-right: 12px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.pretty th .asc {
+  background-image: url(/images/up_arrow.png);
+  background-size: 15%;
+}
+
+.pretty th .desc {
+  background-image: url(/images/down_arrow.png);
+  background-size: 15%;
+}
+
+.navbar-brand:hover {
+ color: #ffffff;
+ background-color: transparent;
+ text-decoration-line: underline;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.center {
+  padding-left: 10%
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #e8d911;
+    background-color: transparent;
+}
+
+
+footer {
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.search {
+    width: fit-content;
+    border: #ff7fae;
+    padding: 0%;
+}
+
+.search .btn-primary {
+    margin-top: 10%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #022a4c;
+    border-color: #2e6da4;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #022a4c;
+    border-color: #2e6da4;
+}
+
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
+  .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #022a4c;
+    border-color: #337ab7;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  padding-bottom:90px;
+}
+body {
+  margin-bottom: 90px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.footer a{
+  float: left;
+  height: 10px;
+  padding: 10px 10px;
+  line-height: 5px;
+  margin-left: -15px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+.column {
+  margin: 5px;
+}
+
+.new_width {
+  margin-top: 1.2%;
+}
+
+.export a {
+  color: #fff;
+}
+
+.pagination {
+  background: white;
+  cursor: default;
+  height: 22px;
+  a, span, em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px;
+  }
+  .disabled {
+    color: #999999;
+    border: 1px solid #dddddd;
+    display: none;
+  }
+  .current {
+    font-style: normal;
+    font-weight: bold;
+    background: #2e6ab1;
+    color: white;
+    border: 1px solid #2e6ab1;
+  }
+  a {
+    text-decoration: none;
+    color: #105cb6;
+    border: 1px solid #9aafe5;
+    &:hover, &:focus {
+      color: #000033;
+      border-color: #000033;
+    }
+  }
+}
